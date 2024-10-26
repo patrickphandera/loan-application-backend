@@ -133,13 +133,3 @@ def predict():
         traceback.print_exc()
         return jsonify({'error': f"An error occurred during prediction: {str(e)}"}), 500
 
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    # Run the app on port 5000
-    app.run(host='0.0.0.0', port=5000, debug=True)
