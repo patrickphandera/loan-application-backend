@@ -348,4 +348,3 @@ def predict_many():
             return jsonify({'error': f"An error occurred during prediction: {str(e)}"}), 500
 
     return jsonify({"error": "Unsupported file type. Only 'csv' files are accepted."}), 400
-
